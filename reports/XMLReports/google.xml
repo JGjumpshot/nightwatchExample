@@ -5,9 +5,9 @@
 
   <testsuite name="google"
     errors="1" failures="0" hostname="" id="" package="google" skipped="0"
-    tests="1" time="0.002000" timestamp="Mon, 05 Nov 2018 23:11:06 GMT">
+    tests="1" time="0.004000" timestamp="Tue, 06 Nov 2018 18:08:58 GMT">
   
-    <testcase name="Demo test Google" classname="google" time="0.002000" assertions="0">
+    <testcase name="Demo test Google" classname="google" time="0.004000" assertions="0">
     </testcase>
   
 
@@ -15,17 +15,17 @@
     <system-err>
         Error while running [Google / Demo test Google]:
 
-  TypeError: browser.url is not a function
-    at Object.Demo test Google (C:\Users\jackson.gunther\projects\seleniumTest\apiTest\tests\google.js:5:10)
-    at Object.&lt;anonymous&gt; (C:\Users\jackson.gunther\projects\seleniumTest\apiTest\node_modules\nightwatch\lib\util\utils.js:35:8)
-    at Module.callAsync (C:\Users\jackson.gunther\projects\seleniumTest\apiTest\node_modules\nightwatch\lib\runner\module.js:75:18)
-    at C:\Users\jackson.gunther\projects\seleniumTest\apiTest\node_modules\nightwatch\lib\runner\testcase.js:77:43
+  TypeError: browser.url(...).waitForElementVisible(...).assert.title(...).assert.visible(...).setValue(...).wait is not a function
+    at Object.Demo test Google (C:\Users\jackson.gunther\projects\seleniumTest\apiTest\tests\google.js:10:10)
+    at Module.call (C:\Users\jackson.gunther\projects\seleniumTest\apiTest\node_modules\nightwatch\lib\runner\module.js:62:34)
+    at C:\Users\jackson.gunther\projects\seleniumTest\apiTest\node_modules\nightwatch\lib\runner\testcase.js:70:29
     at _fulfilled (C:\Users\jackson.gunther\projects\seleniumTest\apiTest\node_modules\q\q.js:834:54)
     at self.promiseDispatch.done (C:\Users\jackson.gunther\projects\seleniumTest\apiTest\node_modules\q\q.js:863:30)
     at Promise.promise.promiseDispatch (C:\Users\jackson.gunther\projects\seleniumTest\apiTest\node_modules\q\q.js:796:13)
     at C:\Users\jackson.gunther\projects\seleniumTest\apiTest\node_modules\q\q.js:556:49
     at runSingle (C:\Users\jackson.gunther\projects\seleniumTest\apiTest\node_modules\q\q.js:137:13)
     at flush (C:\Users\jackson.gunther\projects\seleniumTest\apiTest\node_modules\q\q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
     </system-err>
   
 
