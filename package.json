@@ -11,5 +11,6 @@
   "dependencies": {
     "nightwatch": "^0.9.21",
     "selenium-server": "^3.141.0"
-  }
+  },
+  "devDependencies": {}
 }
