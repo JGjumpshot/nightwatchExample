@@ -5,9 +5,9 @@
 
   <testsuite name="salesforce"
     errors="1" failures="0" hostname="" id="" package="salesforce" skipped="0"
-    tests="1" time="0.003000" timestamp="Wed, 07 Nov 2018 18:47:44 GMT">
+    tests="1" time="0.004000" timestamp="Wed, 07 Nov 2018 18:59:09 GMT">
   
-    <testcase name="Salesforce Test" classname="salesforce" time="0.003000" assertions="0">
+    <testcase name="Salesforce Test" classname="salesforce" time="0.004000" assertions="0">
     </testcase>
   
 
@@ -15,8 +15,8 @@
     <system-err>
         Error while running [Salesforce / Salesforce Test]:
 
-  ReferenceError: username is not defined
-    at Object.Salesforce Test (C:\Users\jackson.gunther\projects\seleniumTest\apiTest\tests\salesforce.js:11:40)
+  TypeError: browser.url(...).waitForElementVisible(...).click(...).verify is not a function
+    at Object.Salesforce Test (C:\Users\jackson.gunther\projects\seleniumTest\apiTest\tests\salesforce.js:12:10)
     at Module.call (C:\Users\jackson.gunther\projects\seleniumTest\apiTest\node_modules\nightwatch\lib\runner\module.js:62:34)
     at C:\Users\jackson.gunther\projects\seleniumTest\apiTest\node_modules\nightwatch\lib\runner\testcase.js:70:29
     at _fulfilled (C:\Users\jackson.gunther\projects\seleniumTest\apiTest\node_modules\q\q.js:834:54)

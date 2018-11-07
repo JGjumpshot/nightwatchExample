@@ -9,10 +9,10 @@ module.exports = {
         //.setValue('input[type=text]', 'jackson.gunther@yahoo.com') // send values
         // .pause(1000)
         .click("input[type=email]") // click on search box
+        .verify.visible("input[type=email]") //verify if the element exists
         .setValue('input[type=email]', config.username)
         .click("input[type=password]")
         .setValue('input[type=password]', config.password)
-        //.click('input[]')
         .click('input[type=submit]')
         .pause(20000)
         // .url('http://www.facebook.com')
