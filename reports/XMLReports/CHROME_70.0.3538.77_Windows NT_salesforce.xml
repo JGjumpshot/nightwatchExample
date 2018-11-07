@@ -5,9 +5,9 @@
 
   <testsuite name="salesforce"
     errors="0" failures="0" hostname="" id="" package="salesforce" skipped="0"
-    tests="1" time="209.7" timestamp="Wed, 07 Nov 2018 16:01:56 GMT">
+    tests="1" time="27.48" timestamp="Wed, 07 Nov 2018 18:50:30 GMT">
   
-    <testcase name="Salesforce Test" classname="salesforce" time="209.7" assertions="1">
+    <testcase name="Salesforce Test" classname="salesforce" time="27.48" assertions="1">
 
     
     </testcase>
