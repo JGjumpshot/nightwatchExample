@@ -31,7 +31,8 @@
                 "args": [
                   "disable-web-security",
                  "ignore-certificate-errors",
-                 "--test-type"
+                 "--test-type",
+                 "window-size=1920,1080"
                 ]
               }
             }

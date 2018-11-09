@@ -5,18 +5,18 @@ module.exports = {
         browser
         .url('https://login.salesforce.com') // Go to a url
         .waitForElementVisible('body', 1000) // wait till page loads
-        //.assert.visible('input[type=text]')
-        //.setValue('input[type=text]', 'jackson.gunther@yahoo.com') // send values
-        // .pause(1000)
         .click("input[type=email]") // click on search box
         .verify.visible("input[type=email]") //verify if the element exists
         .setValue('input[type=email]', config.username)
         .click("input[type=password]")
         .setValue('input[type=password]', config.password)
         .click('input[type=submit]')
-        .pause(20000)
-        // .url('http://www.facebook.com')
-        // .assert.title('Facebook - Log In or Sign Up')
+        .pause(7000)
+        .useXpath().click("//*[@id='oneHeader']/div[3]/div/div[1]/div[1]/nav/button")
+        .pause(5000) // need this
+        .click("//*[text()='Leads']")
+        .useCss().waitForElementVisible('body', 5000)
+        .pause(10000)
         .end();
       }
 };
