@@ -15,7 +15,8 @@ module.exports = {
         .useXpath().click("//*[@id='oneHeader']/div[3]/div/div[1]/div[1]/nav/button")
         .pause(5000) // need this
         .click("//*[text()='Leads']")
-        .useCss().waitForElementVisible('body', 5000)
+        .useCss().waitForElementVisible('body', 3000).pause(5000).click("a.forceActionLink > div[title='New']")
+        //.useXpath().click("//*[ul]//*[li]//*[a]//*[text()='New']")
         .pause(10000)
         .end();
       }
