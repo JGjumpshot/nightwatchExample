@@ -16,17 +16,18 @@ module.exports = {
         .pause(5000) // need this
         .click("//*[text()='Leads']")
         .useCss().waitForElementVisible('body', 3000).pause(5000).click("a.forceActionLink > div[title='New']")
-        //.useXpath().click("//*[ul]//*[li]//*[a]//*[text()='New']")
         .pause(2000)
         .click(".firstName")
         .setValue('.firstName', 'Scooby')
         .click(".lastName")
         .setValue('.lastName', 'Doo')
-        .click("")
         .click("input[type=tel]")
         .setValue('input[type=tel]', '8007879110')
-        //.pause('200')
-        //.click("input[class='lastName'").setValue('Doo')
+        .click("div:nth-child(3) > div:nth-child(1) > div > div > div > input")
+        .setValue("div:nth-child(3) > div:nth-child(1) > div > div > div > input", 'Mystery Inc.')
+        .click('input[type=email]')
+        .setValue('input[type=email]', 'test@test.com')
+        .click("div > button[type='button'].slds-button.slds-button--neutral.uiButton--default.uiButton--brand.uiButton.forceActionButton")
         .pause(10000)
         .end();
       }
