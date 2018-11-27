@@ -40,3 +40,5 @@ module.exports = {
         .end();
       }
 };
+//Look to verify after the lead is deleted that it doesn't show up in the list.
+//Learn how to verify more elements on the dom
