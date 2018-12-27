@@ -1,34 +1,22 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <testsuites errors="1"
             failures="0"
-            tests="1">
+            tests="0">
 
   <testsuite name="salesforce"
-    errors="1" failures="0" hostname="" id="" package="salesforce" skipped="0"
-    tests="1" time="0.006000" timestamp="Wed, 07 Nov 2018 23:11:50 GMT">
+    errors="1" failures="0" hostname="" id="" package="salesforce" skipped="1"
+    tests="0" time="0.000" timestamp="">
   
-    <testcase name="Salesforce Test" classname="salesforce" time="0.006000" assertions="0">
+
+  
+
+  
+    
+    <testcase
+      name="Salesforce Test" classname="salesforce">
+      <skipped />
     </testcase>
-  
-
-  
-    <system-err>
-        Error while running [Salesforce / Salesforce Test]:
-
-  TypeError: browser.url(...).waitForElementVisible(...).click(...).verify.visible(...).setValue(...).click(...).setValue(...).click(...).pause(...).useXpath(...).click(...).cssProperty is not a function
-    at Object.Salesforce Test (C:\Users\jackson.gunther\projects\seleniumTest\apiTest\tests\salesforce.js:16:10)
-    at Module.call (C:\Users\jackson.gunther\projects\seleniumTest\apiTest\node_modules\nightwatch\lib\runner\module.js:62:34)
-    at C:\Users\jackson.gunther\projects\seleniumTest\apiTest\node_modules\nightwatch\lib\runner\testcase.js:70:29
-    at _fulfilled (C:\Users\jackson.gunther\projects\seleniumTest\apiTest\node_modules\q\q.js:834:54)
-    at self.promiseDispatch.done (C:\Users\jackson.gunther\projects\seleniumTest\apiTest\node_modules\q\q.js:863:30)
-    at Promise.promise.promiseDispatch (C:\Users\jackson.gunther\projects\seleniumTest\apiTest\node_modules\q\q.js:796:13)
-    at C:\Users\jackson.gunther\projects\seleniumTest\apiTest\node_modules\q\q.js:556:49
-    at runSingle (C:\Users\jackson.gunther\projects\seleniumTest\apiTest\node_modules\q\q.js:137:13)
-    at flush (C:\Users\jackson.gunther\projects\seleniumTest\apiTest\node_modules\q\q.js:125:13)
-    at _combinedTickCallback (internal/process/next_tick.js:131:7)
-    </system-err>
-  
-
+    
   
   </testsuite>
 </testsuites>

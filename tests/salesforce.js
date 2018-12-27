@@ -3,6 +3,7 @@ module.exports = {
    tags: ['Salesforce'],
    'Salesforce Test' : function (browser) {
         browser
+        .maximizeWindow()
         .url('https://login.salesforce.com') // Go to a url
         .waitForElementVisible('body', 1000) // wait till page loads
         .click("input[type=email]") // click on search box
@@ -36,7 +37,7 @@ module.exports = {
         .click("div.branding-actions.actionMenu.popupTargetContainer.uiPopupTarget.uiMenuList.forceActionsDropDownMenuList.uiMenuList--left.uiMenuList--default > div > ul > li:nth-child(3) > a")
         .pause(2000)
         .click("div > button[type='button'].slds-button.slds-button--neutral.uiButton--default.uiButton--brand.uiButton.forceActionButton")
-        .pause(10000)
+        .pause(7000)
         .end();
       }
 };
